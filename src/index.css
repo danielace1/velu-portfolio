@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.gradient-text {
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-blue-500
+    to-emerald-500 text-transparent;
+}
