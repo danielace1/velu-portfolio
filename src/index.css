@@ -11,4 +11,14 @@ body {
   -webkit-background-clip: text;
   @apply bg-gradient-to-t from-blue-500
     to-emerald-500 text-transparent;
+  animation: animate-text steps(40) 3s infinite, blink linear 0.5s infinite;
+}
+
+@keyframes animate-text {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
